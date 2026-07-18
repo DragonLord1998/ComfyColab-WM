@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "world",
+  "version": "0.0.0-dev.0",
+  "display_name": "ComfyColab World Model",
+  "compatibility": {
+    "core_manifest_api": 1,
+    "comfyui": {
+      "compatible_refs": [
+        "8b099de36acd81acd1afa3b5442951dc847e0a52"
+      ],
+      "tested_refs": []
+    }
+  },
+  "node_roots": [],
+  "dependencies": [],
+  "patches": [],
+  "environments": [],
+  "hooks": {
+    "configure": {
+      "path": "runtime/configure.py",
+      "network": "none",
+      "write_roots": []
+    },
+    "doctor": {
+      "path": "runtime/doctor.py",
+      "network": "none",
+      "write_roots": []
+    },
+    "runtime_env": {
+      "path": "runtime/runtime_env.py",
+      "network": "none",
+      "write_roots": []
+    }
+  },
+  "workflows": [],
+  "probes": [],
+  "health_checks": {
+    "node_ids": [],
+    "command": [
+      "python",
+      "runtime/doctor.py"
+    ]
+  },
+  "accelerators": [],
+  "validation_commands": [
+    [
+      "bash",
+      "scripts/check.sh"
+    ]
+  ],
+  "licenses": [],
+  "readiness": {
+    "namespace": "packs.world",
+    "fields": []
+  }
+}

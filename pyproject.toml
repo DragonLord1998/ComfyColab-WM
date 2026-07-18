@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "comfycolab-world-model"
+version = "0.0.0-dev.0"
+description = "Capability-neutral contract skeleton for a future ComfyColab world model."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "ComfyColab contributors" },
+]
+dependencies = []
+
+[tool.setuptools]
+py-modules = []
